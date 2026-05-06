@@ -1,4 +1,8 @@
-#PROGRAM1
+**#PROGRAM1
+
+1. Preprocessing IoT sensor dataset , train a machine learning model to predict sensor failure
+**
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -16,8 +20,11 @@ print(classification_report(y_test,RandomForestClassifier().fit(X_train, y_train
     accuracy                           0.89       100
    macro avg       0.76      0.74      0.75       100
 weighted avg       0.89      0.89      0.89       100
-
+**
 #PROGRAM2
+
+2. Reducing the dimensionality of the iris dataset using principal component analysis**
+
 import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.decomposition import PCA
@@ -45,7 +52,12 @@ Reduced Dataset after PCA:
 2 -2.888991 -0.144949
 3 -2.745343 -0.318299
 4 -2.728717  0.326755
+
+**
 #PROGRAM3
+
+3. Using home temperature dataset, train a linear regression model to predict user temperature preference
+**
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
@@ -81,7 +93,12 @@ Actual Temperature: [25 24]
 Predicted Preferred Indoor Temperature: 24.84 °C
 C:\ProgramData\anaconda3\Lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names
   warnings.warn(
+**
+  
 #PROGRAM4
+
+4. Applying support vector machine regression model on environmental dataset (humidity) and predict indoor air quality
+**
 import pandas as pd
 from sklearn.svm import SVR
 from sklearn.model_selection import train_test_split
@@ -120,7 +137,12 @@ Actual IAQ: [55 82]
 Predicted Indoor Air Quality for 58% humidity: 68.36
 C:\ProgramData\anaconda3\Lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
   warnings.warn(
+
+  **
 #PROGRAM5
+
+5. Building a decision tree regression model to predict pollution levels in smart city pollution sensor dataset, and evaluate its performance
+**
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.model_selection import train_test_split
@@ -141,7 +163,13 @@ Predicted AQI: [140.0, 260.0, 200.0]
 
 Mean Squared Error: 1200.0
 R² Score: -0.03846153846153855
-#PROGRAM6
+
+
+**#PROGRAM6
+
+6. Predicting the forecast of the day with the help of a weather dataset using Naive Bayes
+**
+
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.naive_bayes import GaussianNB
@@ -160,7 +188,12 @@ print("Predicted Forecast:",m.predict([[2,2,1,0]]))
 Predicted Forecast: [1]
 C:\ProgramData\anaconda3\Lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but GaussianNB was fitted with feature names
   warnings.warn(
-#PROGRAM7
+
+  
+**#PROGRAM7
+
+7. Using Logistic regression to predicate the heart rate is normal or abnormal
+**
 from sklearn.linear_model import LogisticRegression
 
 m=LogisticRegression().fit([[25,72,1],[40,90,0],[30,75,1],[50,110,0],[28,68,1],[60,120,0]],[0,1,0,1,0,1])
@@ -173,7 +206,12 @@ for i,x in enumerate(m.predict(p)):
 Patient 1: Normal Heart Rate
 Patient 2: Abnormal Heart Rate
 Patient 3: Abnormal Heart Rate
-#PROGRAM8
+
+
+**#PROGRAM8
+
+8. Predicting the power consumption using IoT Energy consumption dataset using random forest model
+**
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
@@ -190,7 +228,12 @@ Mean Squared Error: 2427.561266666662
 Predicted Energy Consumption: [992.13]
 C:\ProgramData\anaconda3\Lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestRegressor was fitted with feature names
   warnings.warn(
-#PROGRAM9
+
+  
+**#PROGRAM9
+
+9. Using K - Mean clustering to group IoT based patients data on vitual signs like heart rate, blood pressure, and glucose levels to identity high risk, moderate -risk and low risk patients
+**
 import pandas as pd
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
@@ -222,4 +265,8 @@ C:\ProgramData\anaconda3\Lib\site-packages\sklearn\cluster\_kmeans.py:1429: User
 8         88            140      130        2      High
 9        120            165      190        0       Low
 No description has been provided for this image
- 
+
+
+
+ <img width="556" height="453" alt="image" src="https://github.com/user-attachments/assets/f8162afe-438d-4341-b7c4-6e27b17ccd53" />
+
